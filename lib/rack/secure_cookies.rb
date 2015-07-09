@@ -9,7 +9,6 @@ module Rack
     end
 
     def call(env)
-      request = Rack::Request.new(env)
       status, headers, body = @app.call(env)
       flag_cookies_as_secure!(headers)
 
