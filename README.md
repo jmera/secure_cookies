@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jmera/secure_cookies.svg?branch=master)](https://travis-ci.org/jmera/secure_cookies)
+
 # Rack::SecureCookies
 
 Rack middleware to set the secure flag on your rack app's cookies.
