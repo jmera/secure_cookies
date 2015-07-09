@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/jmera/secure_cookies.svg?branch=master)](https://travis-ci.org/jmera/secure_cookies)
+[![Code Climate](https://codeclimate.com/github/jmera/secure_cookies/badges/gpa.svg)](https://codeclimate.com/github/jmera/secure_cookies)
+[![Inline docs](http://inch-ci.org/github/jmera/secure_cookies.svg?branch=master)](http://inch-ci.org/github/jmera/secure_cookies)
 
 # Rack::SecureCookies
 
