@@ -27,18 +27,19 @@ To work properly, this middlware must be inserted before your cookie middlware.
 In `config.ru`:
 
 ```ruby
+require "rack/secure_cookies
+
 use Rack::SecureCookies
 use CookieMiddleware
 
 run YourApp
 ```
 
-For Rails applications, you typically want to flag cookies as secure only in production and staging environments.  For example, `config/environments/production.rb` might include:
+For Rails applications, you typically want to flag cookies as secure only in production and staging environments.  For example, `config/environments/production.rb` might include (Don't forget to `require "rack/secure_cookies"`):
 
 ```ruby
 config.middleware.insert_before ActionDispatch::Cookies, Rack::SecureCookies
 ```
-
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
