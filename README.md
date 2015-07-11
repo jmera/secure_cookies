@@ -20,15 +20,15 @@ And then execute:
 
 ## Requirements
 
-To work properly, this middlware must be inserted after your cookie middlware.
+To work properly, this middlware must be inserted before your cookie middlware.
 
 ## Usage
 
 In `config.ru`:
 
 ```ruby
-use CookieMiddleware
 use Rack::SecureCookies
+use CookieMiddleware
 
 run YourApp
 ```
@@ -36,7 +36,7 @@ run YourApp
 For Rails applications, you typically want to flag cookies as secure only in production and staging environments.  For example, `config/environments/production.rb` might include:
 
 ```ruby
-config.middleware.insert_after ActionDispatch::Cookies, Rack::SecureCookies
+config.middleware.insert_before ActionDispatch::Cookies, Rack::SecureCookies
 ```
 
 ## Development
