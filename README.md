@@ -27,7 +27,7 @@ To work properly, this middlware must be inserted before your cookie middlware.
 In `config.ru`:
 
 ```ruby
-require "rack/secure_cookies
+require "rack/secure_cookies"
 
 use Rack::SecureCookies
 use CookieMiddleware
