@@ -20,7 +20,7 @@ And then execute:
 
 ## Requirements
 
-To work properly, this middlware must be inserted before your cookie middlware.
+To work properly, this middlware must come before your cookie middlware.
 
 ## Usage
 
